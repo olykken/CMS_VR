@@ -6,5 +6,5 @@ This project is under an MIT Liscense.
 Due to the use of some paid but copywrited assets the entire project can not be hosted in full.
 
 
-All open source pieces are available here and a working demo is included the repository. 
+All open source pieces are available here. 
 If you wish to contribute to the project simply clone or download it from the repository and then make a push request.

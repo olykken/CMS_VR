@@ -7,7 +7,7 @@ Due to the use of some paid but copywrited assets the entire project can not be 
 
 
 All open source pieces are available here and a working demo is included the repository. 
-The demo is called CMS_VR, it includes and .exe application and an associated data folder called CMS_VR_Data. Both must be downloaded for the demo to work.
+The demo is called CMS Demo, it includes and .exe application and an associated data folder called CMS_VR_Data. Both must be downloaded for the demo to work.
 The demo currently only supports HTC Vive, there are plans to add compatability for the Oculus rift.
 The demo will require the minimum VR specs for the hardware but it is reccomended that at least a GTX1080 or equivalent graphics card be used.
 If you wish to contribute to the project simply clone or download it from the repository and then make a push request.

@@ -34,24 +34,45 @@ public class TeleportTrigger : MonoBehaviour {
         }
     }
 
+    public void OnControlRoom()
+    {
+        ToControlRoom();
+    }
+
+    public void OnCavern()
+    {
+        TeleportDown();
+    }
+
+    public void OnSurface()
+    {
+        TeleportUp();
+    }
+
+    public void OnFarSide()
+    {
+        TeleportFar();
+    }
+
+
     public void TeleportUp()
     {
-        rig.transform.position = new Vector3(206f, .5f, -124.5f);
+        rig.transform.position = new Vector3(210f, 2f, -130f);
         rig.transform.Rotate(0.0f,40.0f,0.0f);
     }
 
     public void TeleportDown()
     {
-        rig.transform.position = new Vector3(4.17f, -119f, -3.08f);
+        rig.transform.position = new Vector3(5.4f, -119f, -3.8f);
     }
 
     public void ToControlRoom()
     {
-        rig.transform.position = new Vector3(38.5f, .5f, 9.22f);
-        rig.transform.Rotate(0.0f,150.0f,0.0f);
+        rig.transform.position = new Vector3(36f, 2.5f, 7f);
+        rig.transform.Rotate(0.0f,0.0f,0.0f);
     }
     public void TeleportFar() {
-        rig.transform.position = new Vector3(146f,.5f,162f);
+        rig.transform.position = new Vector3(150f,2f,160f);
         rig.transform.Rotate(0.0f,-145f,0.0f);
     }
 }

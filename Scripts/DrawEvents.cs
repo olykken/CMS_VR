@@ -18,6 +18,7 @@
 	PERFORMANCE OF THIS SOFTWARE.
 	
 */
+// Creates the event pieces
 
 using UnityEngine;
 using System;
@@ -532,7 +533,7 @@ namespace CMSdraw {
 			tube_alpha = CMSvar.MET_transparency;
 
 
-			// extract the data for each track in the JSON event
+			// extract the data for each MET object in the JSON event
 			foreach (object[] MET2 in METs) {
 
 				float[] MET = new float[MET2.Length];

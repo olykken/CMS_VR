@@ -107,7 +107,7 @@ public class readJSON {
 
 			Debug.Log ("Rendering MET:");
 			METCount = 0;
-			MET = new GameObject ("MET");
+			MET = new GameObject ("MissingET");
 			MET.transform.parent = CurrentEvent.transform;
 			METCount = DE.DrawMET (CMShandler.GetCollection ("PFMETs_V1"), CMSvar.PFMETs_V1_pt_index, CMSvar.PFMETs_V1_phi_index,
 				CMSvar.PFMETs_V1_pt_min, "MET", METCount, MET);
@@ -121,36 +121,36 @@ public class readJSON {
 				CMSvar.GlobalMuons_V1_charge_index, CMSvar.GlobalMuons_V1_pt_min, "muon", muonCount, Muons);
 			Debug.Log ("Found " + muonCount + " muons");
 
-			Debug.Log ("Rendering HBrechits:");
+			Debug.Log ("Rendering HBRechits:");
 			rechitCount = 0;
-			HBrechit = new GameObject ("HBrechits");
+			HBrechit = new GameObject ("HBRechits");
 			HBrechit.transform.parent = CurrentEvent.transform;
 			rechitCount = DE.DrawRechits (CMShandler.GetCollection ("HBRecHits_V2"), CMSvar.HBrecHits_V2_energy_index,
 				CMSvar.HBrecHits_V2_eta_index, CMSvar.HBrecHits_V2_phi_index, CMSvar.HBrecHits_V2_time_index,
 				CMSvar.HBrecHits_V2_detid_index, 0.5f, 0.5f, "HBrechit", rechitCount, HBrechit);
 			Debug.Log ("Found " + rechitCount + " HBrechits");
 
-			Debug.Log ("Rendering HErechits:");
+			Debug.Log ("Rendering HERechits:");
 			rechitCount = 0;
-			HErechit = new GameObject ("HErechits");
+			HErechit = new GameObject ("HERechits");
 			HErechit.transform.parent = CurrentEvent.transform;
 			rechitCount = DE.DrawRechits (CMShandler.GetCollection ("HERecHits_V2"), CMSvar.HErecHits_V2_energy_index,
 				CMSvar.HErecHits_V2_eta_index, CMSvar.HErecHits_V2_phi_index, CMSvar.HErecHits_V2_time_index,
 				CMSvar.HErecHits_V2_detid_index, 0.5f, 0.5f, "HErechit", rechitCount, HErechit);
 			Debug.Log ("Found " + rechitCount + " HErechits");
 
-			Debug.Log ("Rendering EBrechits:");
+			Debug.Log ("Rendering EBRechits:");
 			rechitCount = 0;
-			EBrechit = new GameObject ("EBrechits");
+			EBrechit = new GameObject ("EBRechits");
 			EBrechit.transform.parent = CurrentEvent.transform;
 			rechitCount = DE.DrawRechits (CMShandler.GetCollection ("EBRecHits_V2"), CMSvar.EBrecHits_V2_energy_index,
 				CMSvar.EBrecHits_V2_eta_index, CMSvar.EBrecHits_V2_phi_index, CMSvar.EBrecHits_V2_time_index,
 				CMSvar.EBrecHits_V2_detid_index, 0.25f, 0.5f, "EBrechit", rechitCount, EBrechit);
 			Debug.Log ("Found " + rechitCount + " EBrechits");
 
-			Debug.Log ("Rendering EErechits:");
+			Debug.Log ("Rendering EERechits:");
 			rechitCount = 0;
-			EErechit = new GameObject ("EErechits");
+			EErechit = new GameObject ("EERechits");
 			EErechit.transform.parent = CurrentEvent.transform;
 			rechitCount = DE.DrawRechits (CMShandler.GetCollection ("EERecHits_V2"), CMSvar.EErecHits_V2_energy_index,
 				CMSvar.EErecHits_V2_eta_index, CMSvar.EErecHits_V2_phi_index, CMSvar.EErecHits_V2_time_index,
